@@ -37,7 +37,7 @@ alias CBLAS_TRANSPOSE.CblasNoTrans CblasNoTrans;
 alias CBLAS_TRANSPOSE.CblasTrans CblasTrans;
 alias CBLAS_TRANSPOSE.CblasConjTrans CblasConjTrans;
 
-// CBLAS functions
+// CBLAS & Lapacke functions
 extern(C) @nogc nothrow{
 void cblas_dgemm(in CBLAS_LAYOUT layout, in CBLAS_TRANSPOSE TransA,
                  in CBLAS_TRANSPOSE TransB, in int M, in int N,
