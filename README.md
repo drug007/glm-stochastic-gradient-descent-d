@@ -1,5 +1,9 @@
 # Generalized Linear Models and Stochastic Gradient Descent in D
 
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 The [Mir GLAS](https://github.com/libmir/mir-glas) library has shown that D language is capable of high performance calculations to rival those written in C and C++. Mathematical analysis libraries native to D however are still in short supply. In this blog we roll our own gamma GLM model written in optimization style using the Newton-Raphson method and we carry out linear regression using gradient descent.
 
 # Mathematical Preliminaries
