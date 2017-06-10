@@ -2,6 +2,7 @@ import std.algorithm, std.stdio, std.string, std.array, std.conv;
 import std.math : exp, pow, log, sqrt, abs;
 import std.range;
 import std.typecons : Tuple, tuple;
+import std.random : randomShuffle;
 
 // dmd script.d -L-lopenblas -L-lpthread -L-llapacke -L-llapack -L-lm && ./script
 
@@ -224,7 +225,7 @@ T[] gradientDescent(T, alias gradFun = nGradient)
                      	int nepochs = 500, T ptol = 1e-5)
 {
 	auto prevPars = pars.dup;
-	auto temp = pars.dup;
+	auto temp = pars.dup; x.randomShuffle;
 	for(int i = 0; i < nepochs; ++i)
 	{
 		for(int j = 0; j < x.length; ++j)
